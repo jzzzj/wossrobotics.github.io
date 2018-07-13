@@ -1,2 +1,2 @@
-# wossrobotics.github.io
+# wossrobotics.ca
 Official website for the WOSS Robotics Club.
