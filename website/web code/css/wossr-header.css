@@ -42,7 +42,7 @@
 }
 .nav > div > li{
 	display: inline-block;
-	font-size: 18px;
+	font-size: 1vw;
 }
 .linesep{
 	color: #5d5d5d;
