@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>about</title>
+	<link rel="icon" type="image/x-icon" href="../img/logo-mini.png"/>
+	<link href="css/body.css" rel="stylesheet" type="text/css">
+	<link href="css/woss-footer.css" rel="stylesheet" type="text/css">
+	<link href="css/wossr-header.css" rel="stylesheet" type="text/css">
+	<link href="abt/about.css" rel="stylesheet" type="text/css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+
+<body>
+<div id="holder">
+	<header id="header">
+		<div class="nav-container">
+		</div>
+	<!--navigation bar-->
+				<div class="header-logo">
+					<a href="http://wossrobotics.ca/" class="logo"><img src="../img/logo.png" alt="WOSS ROBOTICS" class="header-logo"></a>
+				</div>
+				<button class="menubtn"></button>
+			<ul class="nav">
+				<div class="ver-menu">
+				<li><a href="hom/main page.html">HOME</a></li>
+				<li class="linesep">|</li>
+				<li><a href="about.html" id="nav-cur">ABOUT</a></li>
+				<li><a href="ttm/the-team.html">THE TEAM</a></li>
+				<li><a href="//previous projects">PREVIOUS PROJECTS</a></li>
+				<li><a href="//events and outreach">EVENTS AND OUTREACH</a></li>
+				<li><a href="//sponsors">SPONSORS</a></li>
+				<li class="linesep">|</li>
+				<li><a href="//donate">DONATE</a></li>
+				<li><a href="//contact">CONTACT</a></li>
+				</div>
+			</ul>
+		
+	</header>
+	<div id="cont">
+		<img src="../img/shirobako.jpg">
+		<div id="cont-pag">
+			<div class="cont-txt" id="cont-abt">
+				<hr>
+				<h1> About </h1>
+				<p>
+					Neat own nor she said see walk. And charm add green you these. Sang busy in this drew ye fine. At greater prepare musical so attacks as on distant. Improving age our her cordially intention. His devonshire sufficient precaution say preference middletons insipidity. Since might water hence the her worse. Concluded it offending dejection do earnestly as me direction. Nature played thirty all him. <br>Shewing met parties gravity husband sex pleased. On to no kind do next feel held walk. Last own loud and knew give gay four. Sentiments motionless or principles preference excellence am. Literature surrounded insensible at indulgence or to admiration remarkably. Matter future lovers desire marked boy use. Chamber 	reached do he nothing be. (p)	
+				</p>
+			</div>
+			<div class="cont-txt" id="cont-gl">
+				<hr>
+				<h1> Goal </h1>
+				<embed src="../resources/ASCII-art.txt">(embed)
+				
+			</div>
+			<div class="cont-txt" id="cont-vls">
+				<hr>
+				<h1> Values </h1>
+				<embed src="../resources/ASCII-art-2.txt">(embed)
+				
+			</div>
+			<div class="cont-txt" id="cont-hst">
+				<hr>
+				<h1> History </h1>
+				<h2>funny stories(h2)</h2>
+				<p>One night during high school, my friend and I got invited to a party. I didn't drive back then so my friend picked me up. All went well on our way to the party. On the way back however, he got pulled over. As we were pulling to the side of the road, I told him that I was gonna pretend to be sleeping (since I was the passenger). Anyway, I hear the cop get out of his cop car, walk towards our car, stops at the window but doesn't say anything. I can feel the brightness of his flashlight but I don't hear him or my friend say anything. After about what seemed like an eternity, I decide to open my eyes to see what's going on. That's when I see my friend, the guy who is driving, is pretending like he is sleeping too.</p>
+				<p>
+				I can sum it up very easily: We were at the shooting range, his gun jammed, he looked down the barrel to see what was wrong.
+				</p>
+			</div>
+		</div>
+	</div>
+	
+	<div class="footerblend"></div>
+	<div class="footer">
+		<div class="footerlogo">
+			<img src="../img/logo.png">
+			
+		</div>
+		<div class="footercnct">
+			<h1>contact us</h1>
+			<div class="footercnctimg">
+				<img src="../img/facebook.png" href="//facebook-link">
+				<img src="../img/snapchat.png" href="//snapchat-link">
+				<img src="../img/google-plus.png" href="//google-plus-link">
+				<img src="../img/instagram.png" href="//instagram-link">
+				<img src="../img/twitter.png" href="twitter-link">
+				
+			</div>
+		</div>
+		<div id="footerother">
+			
+		</div>
+	</div>
+
+	
+	<script>
+		$(document).ready(function(){
+			function footerfunc(){
+			var x=document.documentElement.clientWidth/100;
+			var y=$('#cont').position().top+$('#cont').outerHeight(true);
+			var a=y;
+			var b=x*7+y;
+			var locstr1 = a + 'px';
+			var locstr2 = b + 'px';
+			$('.footerblend').css('top',locstr1);
+			$('.footer').css('top',locstr2);
+			}
+			footerfunc();
+			$(window).on('resize',function(){
+				footerfunc();
+			});
+		});
+	</script>
+	<script src="script/nav-menu-open-script.js" ></script>   <!--open menu for nav-->
+
+</div>
+</body>
+</html>

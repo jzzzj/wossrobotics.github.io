@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>slide show test</title>
+<link href="slide-show-test.css" rel="stylesheet" type="text/css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+
+<body>
+
+<div class="slideimg">
+
+		<a id="button-prev" data-pagerId="button-next"> &#60 </a>
+		<a id="button-next" data-pagerId="button-prev"> &#62 </a>
+		<div class="pager">
+			<button class="pager-item" data-pagerId="0"></button>
+			<button class="pager-item" data-pagerId="1"></button>
+			<button class="pager-item" data-pagerId="2"></button>
+			<button class="pager-item" data-pagerId="3"></button>
+			<button class="pager-item" data-pagerId="4"></button>
+		</div>
+	<img id="img0" src="../img/komakan.jpg" alt="komakan">
+	<img id="img1" src="../img/bilibili.jpg"  alt="bilibili">
+	<img id="img2" src="../img/madoka.jpg"  alt="madoka&homura">
+	<img id="img3" src="../img/miku.png"  alt="miku">
+	<img id="img4" src="../img/oregairu.jpg"  alt="oregairu">
+	
+</div>
+
+
+
+	<script type="text/javascript">
+	$("document"),ready(function() {
+		('#img0').attr("src","../img/bilibili.jpg")
+	});
+	</script>
+</body>
+</html>
