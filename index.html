@@ -14,6 +14,73 @@
 	<link href="https://fonts.googleapis.com/css?family=Lato:700|Anton|Iceberg|Archivo+Black" rel="stylesheet">
 	<!-- animate.css File -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+	
+	<script type="text/javascript">
+		$(document).ready(function(){
+			console.log("ran code");
+			var w = $(window).width(); 
+			var h = $(window).height(); 
+			console.log("w is" + w);
+			console.log("h is" + h);
+			var r = w/h;
+			console.log("r is" + r);
+			if(r > 2){
+				//too wide
+				console.log("too wide");
+				$("#ytwrap").height(w);
+				var n = w/2;
+				console.log(n);
+				$("#ytwrap").width(n);
+			}
+			
+			
+			else if(r < 2){
+				//too narrow
+				console.log("too narrow");
+				$("#ytwrap").height(h);
+				var n = h*2;
+				console.log(n);
+				$("#ytwrap").width(n);
+			}
+			
+			else if(r == 2){
+				//everything is good
+			}
+			
+		});
+		$(window).resize(function(){
+			console.log("ran code");
+			var w = $(window).width(); 
+			var h = $(window).height(); 
+			console.log("w is" + w);
+			console.log("h is" + h);
+			var r = w/h;
+			console.log("r is" + r);
+			if(r > 2){
+				//too wide
+				console.log("too wide");
+				$("#ytwrap").height(w);
+				var n = w/2;
+				console.log(n);
+				$("#ytwrap").width(n);
+			}
+			
+			
+			else if(r < 2){
+				//too narrow
+				console.log("too narrow");
+				$("#ytwrap").height(h);
+				var n = h*2;
+				console.log(n);
+				$("#ytwrap").width(n);
+			}
+			
+			else if(r == 2){
+				//everything is good
+			}
+		});
+		
+	</script>
 </head>
 
 <body>	
@@ -25,7 +92,7 @@
 			<!--<video autoplay muted loop id="bRoll">
   				<source src="vid/roboticsBRoll.mp4" type="video/mp4">
 			</video>-->
-			<div style="position: fixed; z-index: -999; width: 100%; height: 100%; position: absolute; top: 0; bottom: 0">
+			<div id="ytwrap"style="position: fixed; z-index: -999; width: 100%; height: 100%; display: inline-block; top: -9999px; bottom: -9999px; left: -9999px; right: -9999px; margin: auto">
   				<iframe width="100%" height="100%" src="https://www.youtube.com/embed/6UDk1Ur-JSA?controls=0&autoplay=1&mute=1&loop=1&playlist=6UDk1Ur-JSA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 			</div>
 			<div id="greyFilter"></div>
