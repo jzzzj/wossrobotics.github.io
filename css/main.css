@@ -66,6 +66,10 @@ rectTabOne{
 	text-decoration: none;
 }
 
+.nav-text-wrap{
+	padding-left: 0.5vw;
+}
+
 #selectHomeTab{
 	font-family: 'Archivo Black', sans-serif;
 	font-size: 4vw;
